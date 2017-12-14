@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Srebalaji Thirumalai"]
   spec.email         = ["srebalaji@outlook.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Create a github PR from the command line}
+  spec.description   = %q{This gem helps you to create a PR from the current branch against the branch you specify. }
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
