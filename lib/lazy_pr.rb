@@ -1,5 +1,9 @@
 require "lazy_pr/version"
 
 module LazyPr
-  # Your code goes here...
+	class Example
+		def self.test
+		  puts "Its working..Srebalaji"
+		end
+	end
 end
