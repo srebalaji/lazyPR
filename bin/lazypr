@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
-puts "Working..!!"
+
+require 'octokit'
 require 'lazy_pr.rb'
-LazyPr::Example.test
+pull_request = LazyPr::CreatePr.new
+pull_request.login_user
+pull_request.create_pull_request

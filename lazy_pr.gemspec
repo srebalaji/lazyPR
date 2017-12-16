@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = LazyPr::VERSION
   spec.authors       = ["Srebalaji Thirumalai"]
   spec.email         = ["srebalaji@outlook.com"]
-
+  spec.add_dependency 'octokit', '~> 4.0'
   spec.summary       = %q{Create a github PR from the command line}
   spec.description   = %q{This gem helps you to create a PR from the current branch against the branch you specify. }
   spec.homepage      = ""
@@ -27,10 +27,8 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
 
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["lazypr"]
   spec.require_paths = ["lib"]
-
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
 end
