@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'lazy_pr/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "lazy_pr"
+  spec.name          = "lazypr"
   spec.version       = LazyPr::VERSION
   spec.authors       = ["Srebalaji Thirumalai"]
   spec.email         = ["srebalaji@outlook.com"]
