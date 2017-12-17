@@ -1,39 +1,54 @@
 # LazyPr
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lazy_pr`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Create a PR in Github from the terminal :)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lazy_pr'
+gem install lazypr
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install lazy_pr
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+lazypr [base branch name]
+```
+lazypr creates a PR to update the changes of the current branch to the base branch.
 
-## Development
+### Example
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```
+lazypr master
+```
+Let's say you are in the branch 'develop'. The above command creates a PR to update the changes of 'develop' in to 'master'
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+You can also enter the PR title by passing the second argument.
+``` 
+lazypr master "Update changes from develop"
+```
+
+### How lazypr authenticate your Github account
+
+#### Github Personal Access Token
+
+Lazypr allows you to authenticate your Github account using your personal access token.
+
+Just set the following **ENV** variable in your **.bash_profile** or in your **.zshrc** file
+```
+export github_personal_access_token=xxxxxxxxxx
+```
+And don't forgot to source it. ``` source ./bash_profile``` or ``` source ./zshrc```
+
+#### Using username and password
+
+If Lazypr can't find the access_token then it prompts for your Github username and password
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lazy_pr. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
