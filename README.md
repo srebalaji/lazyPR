@@ -41,6 +41,13 @@ export github_personal_access_token=xxxxxxxxxx
 ```
 And don't forgot to source it. ``` source ./bash_profile``` or ``` source ./zshrc```
 
+**Follow this [link](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) to setup your Github access token.**
+
+
+**You need to add repo access to your access token. Refer the below screenshot.**
+![add scope for access token](screenshots/github_access_token.png)
+
+
 #### Using username and password
 
 If Lazypr can't find the access_token then it prompts for your Github username and password
